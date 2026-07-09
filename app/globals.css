@@ -143,3 +143,79 @@ background-position:0% 50%;
 }
 
 
+.animated-gradient-text{
+  background: linear-gradient(
+    90deg,
+    #4f8cff,
+    #6ee7f9,
+    #8b5cf6,
+    #4f8cff
+  );
+
+  background-size:300% 300%;
+
+  -webkit-background-clip:text;
+  background-clip:text;
+
+  -webkit-text-fill-color:transparent;
+
+  animation:gradientMove 6s linear infinite;
+}
+
+@keyframes gradientMove{
+
+0%{
+background-position:0% 50%;
+}
+
+50%{
+background-position:100% 50%;
+}
+
+100%{
+background-position:0% 50%;
+}
+
+}
+
+.glow-button{
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.glow-button::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+left:-120%;
+
+width:80%;
+height:100%;
+
+background:
+
+linear-gradient(
+90deg,
+transparent,
+rgba(255,255,255,.4),
+transparent
+);
+
+transform:skewX(-20deg);
+
+transition:.8s;
+
+}
+
+.glow-button:hover::before{
+
+left:150%;
+
+}
+
