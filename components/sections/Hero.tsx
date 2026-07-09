@@ -182,35 +182,27 @@ export default function Hero() {
 
         {/* Right Side */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.8, rotate: -8 }}
-          animate={{ opacity: 1, scale: 1, rotate: 0 }}
-          transition={{
-            duration: 1,
-            ease: "easeOut",
-          }}
+          initial={{ opacity: 0, scale: .8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1 }}
           className="relative flex items-center justify-center"
         >
 
-          {/* Glow Orbs */}
           <div
-            className="absolute h-[450px] w-[450px] rounded-full blur-[120px]"
-            style={{
-              background:
-                "radial-gradient(circle, rgba(34,211,238,.18), transparent 70%)",
-            }}
-          />
-
-          <div
-            className="absolute h-[320px] w-[320px] rounded-full blur-[90px]"
-            style={{
-              background:
-                "radial-gradient(circle, rgba(59,130,246,.18), transparent 70%)",
-            }}
+            className="
+              absolute
+              h-[520px]
+              w-[520px]
+              rounded-full
+              bg-cyan-500/10
+              blur-[120px]
+              animate-pulse
+            "
           />
 
           <HeroScene />
 
-        </motion.div>
+</motion.div>
 
       </div>
     </section>
