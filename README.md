@@ -234,7 +234,7 @@ npm run start
 **Vercel Deployment**
 
 ```
-https://your-project.vercel.app
+https://xai-intelligence-peach.vercel.app/
 ```
 
 ---
